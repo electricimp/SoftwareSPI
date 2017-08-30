@@ -1,8 +1,8 @@
 # SoftwareSPI
 
-This library contains a bit bang SPI class that can be used as an alternative to the Imp API SPI object. This class contains the same read and write methods as the imp API hardware SPI object. Please note that clock speed cannot be configured with this class. 
+This library contains a bit bang SPI class that can be used as an alternative to the Imp API hardware SPI object. This class contains the same read and write methods as the Imp API. Please note currently the only supported SPI mode is 0 (CPOL 0, CPHA 0) and clock speed cannot be configured when using this class. 
 
-**To add this library to your project, add** #require "SoftwareSPI.device.lib.nut:0.1.0" **to the top of your device code**
+**To add this library to your project, add** `#require "SoftwareSPI.device.lib.nut:0.1.0"` **to the top of your device code**
 
 ## Class Usage
 

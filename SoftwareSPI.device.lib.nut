@@ -95,7 +95,7 @@ class SoftwareSPI {
         if (typeof data != blob) throw ERROR_BAD_PARAMS_WRITEREAD;
 
         foreach (byte in data) {
-            for(mask = 0x80; mask > 0; mask = mask >> 1){
+            for(mask = 0x80; mask > 0; mask = mask >> 1) {
                 cw(0);
                 dw(byte & mask);
                 imp.sleep(0.000001);
