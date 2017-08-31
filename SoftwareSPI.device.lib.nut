@@ -58,7 +58,7 @@ class SoftwareSPI {
             data = b.writestring(data);
         }
 
-        if (typeof data != blob) throw ERROR_BAD_PARAMS_WRITE;
+        if (typeof data != "blob") throw ERROR_BAD_PARAMS_WRITE;
 
         foreach (byte in data) {
             for (mask = 0x80; mask > 0; mask = mask >> 1) {
@@ -92,7 +92,7 @@ class SoftwareSPI {
             data = b.writestring(data);
         }
 
-        if (typeof data != blob) throw ERROR_BAD_PARAMS_WRITEREAD;
+        if (typeof data != "blob") throw ERROR_BAD_PARAMS_WRITEREAD;
 
         foreach (byte in data) {
             for(mask = 0x80; mask > 0; mask = mask >> 1) {
