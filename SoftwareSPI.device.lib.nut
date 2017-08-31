@@ -127,7 +127,7 @@ class SoftwareSPI {
         local dr = _miso.read.bindenv(_miso);
         local mask;
 
-        local read_blob = blob(data.len());
+        local read_blob = blob(numChars);
 
         for (local a = 0; a < numChars; a++) {
             local byte = 0;
