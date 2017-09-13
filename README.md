@@ -98,4 +98,4 @@ server.log(value);
 
 ## License
 
-SoftwareSPI is licensed under the MIT License.
+SoftwareSPI is licensed under the [MIT License](./LICENSE).
