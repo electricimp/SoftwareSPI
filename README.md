@@ -25,7 +25,7 @@ Each of the imp **pin** objects will be configured by the class.
 ```squirrel
 local sclk = hardware.pinA; // Clock
 local mosi = hardware.pinB; // Master Output 
-local miso = hardware.pinC; // Maste Input
+local miso = hardware.pinC; // Master Input
 
 local sspi = SoftwareSPI(sclk, mosi, miso);
 ```
