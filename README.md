@@ -10,7 +10,15 @@ This library provides software-based bit-bang SPI (Serial Peripheral Interface) 
 
 ### Constructor: SoftwareSpi(*sclk, mosi, miso*) ###
 
-The constructor has three parameters, all of which are required: *sclk*, the serial clock signal; *mosi*, the data output; and *miso*, the data input. All parameters are imp **pin** objects that will be configured by the class. 
+#### Parameters ####
+
+| Parameter | Type | Required? | Description |
+| --- | --- | --- | --- |
+| *sclk* | imp **pin** object | Yes | The serial clock signal |
+| *mosi* | imp **pin** object | Yes | The data output |
+| *miso* | imp **pin** object | Yes | The data input |
+
+Each of the imp **pin** objects will be configured by the class. 
 
 **Note** This class does not configure or toggle a chip-select pin. Your application should take care of this functionality. 
 
